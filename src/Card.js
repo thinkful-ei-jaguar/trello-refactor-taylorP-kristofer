@@ -4,9 +4,7 @@ import './Card.css';
 export default function Card(props) {
   return (
     <div className='Card'>
-      <button
-        type='button'
-      >
+      <button type='button' onClick={()=>props.onDeleteCard(props.card)} >
         delete
       </button>
       <h3>{props.title}</h3>
